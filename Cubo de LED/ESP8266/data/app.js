@@ -1,13 +1,11 @@
 var formNetwork = document.getElementById('formNetwork');
 
 formNetwork.addEventListener('submit', function(e){
-    e.preventDefault();
-    
-    var data = new FormData(formNetwork);
+    e.preventDefault(); // impede o envio do form
+    let inputNameNetwork = document.getElementById('inputNameNetwork');
+    let inputPassNetwork = document.getElementById('inputPassNetwork');
 
-    console.log(data);
-    // console.log(data.get('inputNameNetwork'));
-    // console.log(data.get('inputPassNetwork'));
+    console.log(inputNameNetwork.value, inputPassNetwork.value);
 })
 
 
